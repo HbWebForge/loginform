@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      .contact-section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(227, 224, 224);
+      }
+      .contact-container{
+        background-color: white;
+        width: 900px;
+        height: 500px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+      }
+        .info{
+            width: 30%;
+            height: 100%;
+            background-color: #669bbc;
+            display: flex;
+            justify-content: center;
+             padding: 15px 5px;
+             display: flex;
+             flex-direction: column;
+            
+        }
+       
+        .info .info-data{
+            text-align: center;
+            color: black;
+            margin: 20px 0px;
+            
+           
+
+        }
+        .info-data i{
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: white;
+            
+
+        }
+        .info-data h3{
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+        .info-data p{
+            font-size: 14px;
+            text-transform: capitalize;
+            font-size: 400;
+            line-height: 1.5;
+        }
+         .message-us{
+            width: 70%;
+            height: 100%;
+            background-color: #fdf0d5;
+             padding: 20px ;
+             padding-left: 25px;
+        }
+        .message-us h3{
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .message-us p{
+            line-height: 1.5;
+            font-size: 15px;
+            text-transform:capitalize;
+           
+            margin: 10px 0px;
+        }
+        .message-us form{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+        .message-us form input{
+            padding: 15px 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 10px ;
+
+        }
+        .message-us form input:focus , .message-us form textarea:focus{
+            transition: all 0.2s linear;
+            border: 3px solid #669bbc;
+        }
+        .message-us form textarea{
+            padding: 15px 15px;
+            margin-bottom: 10px;
+            border: none;
+            min-height: 110px;
+
+            border-radius: 10px;
+             box-shadow: 0 0 10px ;
+             outline: none;
+             text-transform: capitalize;
+             font-size: 15px;
+        }
+        .message-us form input::placeholder{
+            text-transform: capitalize;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        .message-us form input[type=submit]{
+            background-color: #669bbc;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            outline: none;
+            width: 120px;
+            margin-top: 15px;
+        }
+         .message-us form input[type=submit]:focus{
+            border: 3px solid white;
+            transition: all 0.3 linear;
+         }
+       @media screen and (max-width:650px) {
+        .contact-container{
+            flex-direction: column;
+            width: 100%;
+        }
+        .info{
+            width: 100%;
+            height: 400px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .info .info-data{
+            width: 100%;
+            margin: 10px 0px;
+        }
+        .message-us{
+            width: 100%;
+            height: auto;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+    <div class="contact-container">
+        <div class="info">
+            <div class="info-data">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>address</h3>
+                <p>city naorwal , district narowal pakistan</p>
+            </div>
+             <div class="info-data">
+                <i class="fa-solid fa-phone-volume"></i>
+                <h3>phone</h3>
+                <p>+92301-1122333</p>
+                <p>+92310-4455666</p>
+            </div>
+            <div class="info-data">
+               <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>hbwebforge@gmail.com</p>
+                <p>info.hbwebforge@gmail.com</p>
+            </div>
+        </div>
+        <div class="message-us">
+            <h3>send us a message</h3>
+            <p>if you have any work from me  or any types of quries related to my tutorial, you can send me message from here. it's my pleasure to help you</p>
+            <form action="#">
+                <input type="text" name="name" required placeholder="enter your name" id="">
+                <input type="email" name="email" placeholder="enter your email" id="">
+                <textarea name="sms" placeholder="write your message" required id=""></textarea>
+                <input type="submit" value="Send Now">
+            </form>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
